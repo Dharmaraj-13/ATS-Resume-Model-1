@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --ff-inter-:"Inter", serif;
+    --ff-roboto-:"Roboto", serif;
+    --ff-nunito-: "Nunito", serif;
+    
+    --bs-black: #000000;
+    --bs-grey-1:#404040;
+    --bs-grey-2:#4a4a4a;
+    --bs-grey-3:#dbd8d8;
+
+}
+*{
+  font-family: 'Times New Roman', Times, serif;
+  color: var(--bs-grey-1);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.a4-template{
+    width: 210mm; /* A4 width in pixels at 96 DPI */
+    height: 297mm;
+    max-width: 210mm;
+    min-height: 297mm; /* A4 height in pixels at 96 DPI */
+    margin: 20px auto; /* Center the template */
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+
+  @media print {
+    .a4-template {
+      width: 210mm;
+      height: 297mm;
+      margin: 0;
+      box-shadow: none;
+      border: none;
+      page-break-after: always;
+    }
+  }
+  .row{
+    top: 20px;
+  }
+
+  .name-box{
+   border-bottom: 2px solid #626262; 
+  }
+  .name-box h1{
+    
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--bs-grey-1);
+    margin: 0;
+    padding: 0;
+  }
+  .name-box h4{
+    
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--bs-grey-1);
+    margin: 0;
+    padding: 0;
+  }
+
+  .contact-box{
+    border-bottom: 2px solid #626262 ;
+  }
+
+  .left-side{
+    border-right:2px solid #626262;
+  
+  }
+  .profile h4{
+    font-weight: 700 ;
+    color: var(--bs-grey-1);
+  }
+  .profile p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    font-weight: 450;
+    color: var(--bs-grey-1);
+    text-align: justify;
+
+  }
+  .skills h4{
+    font-weight: 700 ;
+    color: var(--bs-grey-1);
+  }
+  .skills h6{
+    font-weight: 600 ;
+  }
+  .skills ul li{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    font-weight: 450;
+    color: var(--bs-grey-1);
+    text-align: justify;
+  }
+
+  .education h4{
+    font-weight: 700 ;
+    color: var(--bs-grey-1);
+  }
+
+  .certification h4{
+    font-weight: 700 ;
+    color: var(--bs-grey-1);
+    text-transform: uppercase;
+  }
+  
+  .project h4{
+    font-weight: 700 ;
+    color: var(--bs-grey-1);
+    text-transform: uppercase;
+  }
+  .project h6{
+    font-weight: 600 ;
+  }
+
+  .experience h4{
+    font-weight: 700 ;
+    color: var(--bs-grey-1);
+    text-transform: uppercase;
+  }
+  .experience h6{
+    font-weight: 600 ;
+    color: var(--bs-grey-2);
+  }
+ 
